@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(14, 14, 33);
+}
+#loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#loader .box{
+    width: 60px;
+    height: 60px;
+    border: 10px solid rgb(0, 170, 255);
+    border-top: 10px solid rgb(14, 14, 33);
+    border-radius: 50%;
+    animation: spin 1.5s infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#start{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#start button{
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 10px;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+#countdown{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-size: 2rem;
+}
+
+#canvas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-image: url(img/bgg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bungkus{ 
+    width: 300px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: rgb(14, 14, 33);
+    z-index: 999;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+#scoremu{
+    
+    position: absolute;
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(14, 14, 33);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 3rem;
+    z-index: 998;
+    padding-top: 10%;
+}
